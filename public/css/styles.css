@@ -1,0 +1,32 @@
+header {
+    background-color: #ff6600;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Transparent white background */
+    z-index: 1000;
+    transition: top 0.3s; /* Add smooth transition effect for the header */
+}
+
+/* Make header transparent when scrolled up */
+header.scrolled-up {
+    top: -100px; /* Adjust this value to hide the header completely */
+    background-color: rgba(255, 255, 255, 0); /* Fully transparent background */
+}
+
+/* Active state for menu item */
+.navbar-menu li a.active {
+    /* Add styles for the active menu item */
+    /* For example: */
+    font-weight: bold;
+    color: #ff0000; /* Change the color based on your design */
+}
+.banner-bottom-shape {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(
+        to bottom right,
+        transparent calc(50% - 1px),
+        white calc(50% + 1px)
+    );
+}
